@@ -22,5 +22,12 @@ git push origin master
 # 从远程库克隆
 git clone git@github.com:smallinsect/learngit
 
+# 把文件添加到仓库
+git add file1.txt
+# 把文件提交到仓库
+git commint -m "wrote a readme file1.txt"
 
-
+# for example
+git add file1.txt
+git add fi1e2.txt file3.txt
+git commit -m "add 3 file"
