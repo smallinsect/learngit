@@ -10,6 +10,22 @@ git config --global user.email "Your email"
 git config --global user.name
 git config --global user.email
 
+# 创建版本库
+mkdir learngit
+cd learngit
+pwd
+git init
+
+# 把文件添加到仓库
+git add file1.txt
+# 把文件提交到仓库
+git commint -m "wrote a readme file1.txt"
+
+# for example
+git add file1.txt
+git add fi1e2.txt file3.txt
+git commit -m "add 3 file"
+
 # 添加远程库
 # 要在github.com网站新建一个learngit库
 # 将本地与我的远程库关联
@@ -21,13 +37,3 @@ git push origin master
 
 # 从远程库克隆
 git clone git@github.com:smallinsect/learngit
-
-# 把文件添加到仓库
-git add file1.txt
-# 把文件提交到仓库
-git commint -m "wrote a readme file1.txt"
-
-# for example
-git add file1.txt
-git add fi1e2.txt file3.txt
-git commit -m "add 3 file"
