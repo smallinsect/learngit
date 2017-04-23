@@ -27,6 +27,11 @@ git add fi1e2.txt file3.txt
 git commit -m "add 3 file"
 git add *	添加所有修改的文件
 
+# 删除文件
+git rm -rf hehe
+# 删除远程库文件
+git rm -rf --cached hehe
+
 # 添加远程库
 # 要在github.com网站新建一个learngit库
 # 将本地与我的远程库关联
