@@ -9,6 +9,7 @@ git config --global user.email "Your email"
 # 查看用户名和邮箱
 git config --global user.name
 git config --global user.email
+git config --list
 
 # 创建版本库
 mkdir learngit
