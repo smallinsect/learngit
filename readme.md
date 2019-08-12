@@ -56,9 +56,12 @@ git log
 上一个版本是HEAD^
 上上个版本是HEAD^^
 上100个版本是HEAD~100
+# 版本回退
+git reset --hard a0fvf8
 git reset --hard HEAD^
-
 git reset --hard 本版号前7位数
+
+git revert 5lk4er
 
 记录你的每一次命令
 git reflog
@@ -69,3 +72,4 @@ git branch
 git checkout [remote branch]若分支为本地分支，则需切换到服务器的远程分支)
 # 从远程库更新到本地
 git pull
+
