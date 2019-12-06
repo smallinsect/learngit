@@ -1,6 +1,15 @@
 first learngit commit github
 
-note
+# 指定某个文件或文件夹回退到某个版本
+一看就知道要用哪个命令：
+git checkout [<options>] [<branch>] -- <file>...
+那么执行的时候就是这个样子：
+git checkout  ee25a1a3f9465 config/database.php
+如果要回退整个文件夹到某个版本呢？
+git checkout e2fb85c827d24a460d app/Http/Controllers/Auth
+git强制回退到上一个版本：
+
+git reset --hard HEAD^
 
 # 设置当前机器的用户名和邮箱
 git config --global user.name "Your name"
