@@ -1,34 +1,33 @@
 first learngit commit github
 
 # 指定某个文件或文件夹回退到某个版本
-一看就知道要用哪个命令：
-git checkout [<options>] [<branch>] -- <file>...
-那么执行的时候就是这个样子：
-git checkout  ee25a1a3f9465 config/database.php
-如果要回退整个文件夹到某个版本呢？
-git checkout e2fb85c827d24a460d app/Http/Controllers/Auth
-git强制回退到上一个版本：
+一看就知道要用哪个命令：  
+git checkout [<options>] [<branch>] -- <file>...  
+那么执行的时候就是这个样子：  
+git checkout  ee25a1a3f9465 config/database.php  
+如果要回退整个文件夹到某个版本呢？  
+git checkout e2fb85c827d24a460d app/Http/Controllers/Auth  
+git强制回退到上一个版本：  
 
-git reset --hard HEAD^
+git reset --hard HEAD^  
 
 # 设置当前机器的用户名和邮箱
-git config --global user.name "Your name"
+git config --global user.name "Your name"  
 git config --global user.email "Your email"
-
 # 查看用户名和邮箱
-git config --global user.name
-git config --global user.email
-git config --list
-
+git config --global user.name  
+git config --global user.email  
+git config --list  
 # 连接远程库
-创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
+创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。  
+如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
 ssh-keygen -t rsa -C "youremail@example.com"
 
 
 # 创建版本库
-mkdir learngit
-cd learngit
-pwd
+mkdir learngit  
+cd learngit  
+pwd  
 git init
 
 # 把文件添加到仓库
@@ -36,10 +35,11 @@ git add file1.txt
 # 把文件提交到仓库
 git commint -m "wrote a readme file1.txt"
 
+
 # for example
-git add file1.txt
-git add fi1e2.txt file3.txt
-git commit -m "add 3 file"
+git add file1.txt  
+git add fi1e2.txt file3.txt  
+git commit -m "add 3 file"  
 git add *	添加所有修改的文件
 
 # 删除文件
@@ -62,19 +62,20 @@ git clone git@github.com:smallinsect/learngit
 # 查看版本控制系统 历史记录
 git log
 
-上一个版本是HEAD^
-上上个版本是HEAD^^
+上一个版本是HEAD^  
+上上个版本是HEAD^^  
 上100个版本是HEAD~100
 # 版本回退
-git reset --hard a0fvf8
-git reset --hard HEAD^
-git reset --hard 本版号前7位数
+git reset --hard a0fvf8  
+git reset --hard HEAD^  
+git reset --hard 本版号前7位数  
 
-git revert 5lk4er
+git revert 5lk4er 
 
-记录你的每一次命令
-git reflog
-git checkout -- [file name] （若文件有修改，可以还原到最初状态; 若文件需要更新到服务器上，应该先merge到服务器，再更新到本地
+记录你的每一次命令 
+git reflog  
+git checkout -- [file name]   
+（若文件有修改，可以还原到最初状态; 若文件需要更新到服务器上，应该先merge到服务器，再更新到本地
 # 查看当前分支情况
 git branch
 # 若分支位本地分支，则需切换服务器的远程分支
