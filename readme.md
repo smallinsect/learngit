@@ -1,6 +1,26 @@
 first learngit commit github
 
+# 个人网站
+
+- https://用户名.github.io
+- https://smallinsect.github.io
+
+## 搭建步骤
+
+- 1)创建个人站点
+
+创建仓库（注：仓库名必须是【用户名.github.io】）
+
+- 2)
+
+
+
+
+
+
+
 # 指定某个文件或文件夹回退到某个版本
+
 1. 一看就知道要用哪个命令：
 git checkout [<options>] [<branch>] -- <file>...
 2. 那么执行的时候就是这个样子：
