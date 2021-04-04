@@ -11,9 +11,13 @@ first learngit commit github
 
 创建仓库（注：仓库名必须是【用户名.github.io】）
 
-- 2)
+- 2)在仓库下新建index.html
 
+- 3)
 
+# 项目网站搭建
+
+## 去项目路径 点几settings
 
 
 
